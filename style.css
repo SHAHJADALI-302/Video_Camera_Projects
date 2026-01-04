@@ -1,0 +1,41 @@
+* {margin: 0; padding: 0; font-family: "Montserrat", sans-serif; font-weight: 400;}
+
+.main-box {background-image: url(IMAGE/IMAGE_04.JPG); height: 100vh; background-size: cover; background-position: center;}
+
+.one i {cursor: pointer; color: black; font-size: 30px; position: absolute; left: 15px; top: 5px; transition: all 0.5s linear;}
+
+.one i:hover {font-size: 40px; transform: rotate(180deg);}
+
+.sidebar-menu {height: 100vh; position: fixed; width: 300px; background-color: rgba(75, 75, 75, 0.6); box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); transition: all 0.5s linear; left: -300px;}
+
+.logo {position: absolute; width: 100%; line-height: 20px; height: 50px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);}
+
+.logo a {text-decoration: none; position: absolute; left: 70px; font-size: 20px; font-weight: 600; top: 15px; color: white; letter-spacing: 3px;}
+
+.two i {cursor: pointer; font-size: 25px; position: absolute; left: 260px; top: 8px; color: rgb(204, 204, 204); transition: all 0.5s linear;}
+
+.two i:hover {font-size: 33px; transform: rotate(180deg);}
+
+.sidebar-menu .menu {width: 100%; color: white; margin-top: 50px;}
+
+.menu li {margin-top: 10px; padding: 18px 22px;}
+
+.menu i {cursor: pointer; padding-right: 15px;}
+
+.menu li a {text-decoration: none; font-size: 20px; color: white;}
+
+.media {opacity: 0.7; position: absolute; left: 28px; bottom: 50px;}
+
+.media a {color: white; padding: 10px; font-size: 22px;}
+
+.media i {transition: all 0.4s linear; opacity: 0.7;}
+
+.media i:hover {opacity: 1; transform: scale(1.5);}
+
+.menu li:hover {box-shadow: 0 0  8px rgba(0, 0, 0, 0.6);}
+
+#check {display: none;}
+
+#check:checked ~ .sidebar-menu{left: 0;}
+
+#check:checked ~ .one {opacity: 0;}
